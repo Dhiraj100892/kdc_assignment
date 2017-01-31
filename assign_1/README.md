@@ -30,6 +30,8 @@ To run the code for 3 link arm, you can run part_1/que_1.m.
 #Part 2 Analytic Derivatives
 With additional knowledge of derivatives of cost wrt. to joint parameters, optimization took less time, as solver won't spend time on calculating it via finite difference method. To culculate the derivatives I used symbolics to represent the end effactor in terms of joint angle varibles and used Jacobian to calculate the derivatives.  
 
+In SQP there was not noticable difference in time for part_1 and part_2, but in case of interior point method, the derivative basec approach is ~2 faster. I think the derivative based approach will scale up well with increase in number of parameters(joints) as in that case calculating forward kinematics will be expensive and using that calculating gradient based on finite difference method will be much more expensive.
+
 ### Running the code
 To run the code for 3 link arm, you can run part_2/que_2.m.
 
