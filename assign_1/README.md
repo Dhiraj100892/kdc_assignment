@@ -22,7 +22,7 @@ I used L2 norm from the mean position of joint angle as closesness measure. The 
 * I have tested it on the 3 link and 4 link snake robot.
 
 ### Running the code
-To tunr the code for 3 link arm, you can run part_1/que_1.m.
+To run the code for 3 link arm, you can run part_1/que_1.m.
 
 [![Alt text](https://img.youtube.com/vi/V6zTDjGVavY/0.jpg)](https://www.youtube.com/watch?v=V6zTDjGVavY/) 
 ----
@@ -31,7 +31,7 @@ To tunr the code for 3 link arm, you can run part_1/que_1.m.
 With additional knowledge of derivatives of cost wrt. to joint parameters, optimization took less time, as solver won't spend time on calculating it via finite difference method. To culculate the derivatives I used symbolics.  
 
 ### Running the code
-
+To run the code for 3 link arm, you can run part_2/que_2.m.
 
 ----
 #Part 3
@@ -40,6 +40,10 @@ With additional knowledge of derivatives of cost wrt. to joint parameters, optim
 
 ----
 #Part 4
+In order to generate multiple trajectories I did the random restarts. I also additionaly stored the previously founded solution and used them in objective function such that new solution will try to stay away from it. This forces solver to search different space.
 
+The follwing are the result for reaching the same goal state in 4 distinct orientation. 
 ![picture alt](https://cloud.githubusercontent.com/assets/11137004/22453630/1cab60b4-e74e-11e6-91a7-501725e50761.jpg "Title is optional") 
 
+### Running the code
+To get the above result, try to run part_4/que_4.m
