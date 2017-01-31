@@ -33,6 +33,4 @@ d_actu_ang_dist = 2 * (actu_ang - mean_ang);
 d_dist = 2 * d_x_dist' + d_q_dist' + 0.001 * d_actu_ang_dist;
 dist = 2 * x_dist + q_dist + 0.001 * actu_ang_dist;
 
-% d_dist = 2 * d_x_dist'  + d_q_dist'; 
-% dist = 2 * x_dist +  q_dist;
 end

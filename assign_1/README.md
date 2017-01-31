@@ -21,10 +21,17 @@ I used L2 norm from the mean position of joint angle as closesness measure. The 
 * For otimization purpose I used fmincon active set algorithm. The algorithm uses a Sequential Quadratic Programming method to solve Karush-Kuhn-Tucker(KKT) equations.
 * I have tested it on the 3 link and 4 link snake robot.
 
+### Running the code
+To tunr the code for 3 link arm, you can run part_1/que_1.m.
+
 [![Alt text](https://img.youtube.com/vi/V6zTDjGVavY/0.jpg)](https://www.youtube.com/watch?v=V6zTDjGVavY/) 
 ----
 
-#Part 2
+#Part 2 Analytic Derivatives
+With additional knowledge of derivatives of cost wrt. to joint parameters, optimization took less time, as solver won't spend time on calculating it via finite difference method. To culculate the derivatives I used symbolics.  
+
+### Running the code
+
 
 ----
 #Part 3

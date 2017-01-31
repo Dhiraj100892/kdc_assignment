@@ -47,6 +47,6 @@ num_obstacle = size(obstacles, 1);
 for i = 1: num_obstacle
     surf(x * obstacles(i,4) + obstacles(i,1), y * obstacles(i,4) + obstacles(i,2), z * obstacles(i,4) + obstacles(i,3),'FaceColor','black','EdgeColor','black')
 end
-mov(figcounter) = getframe(gcf);
+%mov(figcounter) = getframe(gcf);
 end
 
