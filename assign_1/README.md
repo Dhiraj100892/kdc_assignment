@@ -9,7 +9,8 @@ It includes to dist terms
     * For orientation [q0 q1 q2 q3], I used difference between dot product of desired and current quaternion and 1 as measure of closeness.
 
     > To know the position and orientation of end effactor given the joint angle and link length, I reccursively used Forward Transformation matrix (part_1/forward_kine.m). This method provided the orientation of end effactor in roation matrix. To convert the roation matrix to quaternion I used the formula defines on this [site](http://www.euclideanspace.com/maths/geometry/rotations/conversions/matrixToQuaternion/).       
-* Dist from joint angles extremes 
+* Dist from joint angles extremes
+I used L2 norm from the mean position of joint angle as closesness measure. The 0.001 weight is applied to this criterion as compared to the above one. 
 
 
 2. Optimization Constraints
