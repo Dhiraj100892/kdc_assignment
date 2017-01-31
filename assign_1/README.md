@@ -29,9 +29,7 @@ I used L2 norm from the mean position of joint angle as closesness measure. The 
 ----
 #Part 3
 
-![picture alt](https://cloud.githubusercontent.com/assets/11137004/22453206/29e2b9c4-e74b-11e6-80c0-9b558713ea5d.png "Title is optional")
-
-![picture alt](https://cloud.githubusercontent.com/assets/11137004/22453209/2c2dbab2-e74b-11e6-923f-dec1a8f52a1d.png "Title is optional")
+![picture alt](https://cloud.githubusercontent.com/assets/11137004/22453284/e064ae78-e74b-11e6-8baf-4bcd3acc7fa8.jpg "Title is optional")
 
 ----
 #Part 4
