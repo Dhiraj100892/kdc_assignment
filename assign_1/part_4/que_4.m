@@ -1,5 +1,5 @@
 %% init
-%clear
+clear
 close all
 clc
 
@@ -16,13 +16,12 @@ MaxPitch = pi * ones(length(LinkLength),1);
 MinYaw = -pi * ones(length(LinkLength),1);
 MaxYaw = pi * ones(length(LinkLength),1);
 Obstacles = [0.6 0.3 0.3 0.2; 0.2 0.2 0.5 0.1]; 
-vis_color = rand(num_link,3);
-
 
 other_sol = [];
-num_sol_req = 4;
+num_sol_req = 5;
 pos_diff_thr = 0.1; 
 num_link = length(LinkLength);
+vis_color = rand(num_link,3);
 %% find no of solutions
 i = 0;
 while i < num_sol_req
