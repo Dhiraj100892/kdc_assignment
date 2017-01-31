@@ -1,6 +1,6 @@
 # CMU Robotics Institute 16-745: Dynamic Optimization: Assignment 1 
 # Dhiraj Gandhi
-##Part 1
+#Part 1
 To convert the IK solving problem into optimization problem, I defined  
 ### Optimization Objective Function (part_1/dist.m)
 It includes to dist terms
@@ -14,12 +14,12 @@ I used L2 norm from the mean position of joint angle as closesness measure. The 
 
 
 ### Optimization Constraints
-    * In this I checked if the configuration of robot is colliding with obstacle (part_1/line_sphere_interection.m). If it does, I retunred high value, otherwise 0. To check line sphere intersection I used method defined on this [site](https://en.wikipedia.org/wiki/Line%E2%80%93sphere_intersection)
+* In this I checked if the configuration of robot is colliding with obstacle (part_1/line_sphere_interection.m). If it does, I retunred high value, otherwise 0. To check line sphere intersection I used method defined on this [site](https://en.wikipedia.org/wiki/Line%E2%80%93sphere_intersection)
 
 
 ### Testing
-    * For otimization purpose I used fmincon active set algorithm. The algorithm uses a Sequential Quadratic Programming method to solve Karush-Kuhn-Tucker(KKT) equations.
-    * I have tested it on the 3 link and 4 link snake robot.
+* For otimization purpose I used fmincon active set algorithm. The algorithm uses a Sequential Quadratic Programming method to solve Karush-Kuhn-Tucker(KKT) equations.
+* I have tested it on the 3 link and 4 link snake robot.
 
 [![Alt text](https://img.youtube.com/vi/V6zTDjGVavY/0.jpg)](https://www.youtube.com/watch?v=V6zTDjGVavY/) 
 ----
