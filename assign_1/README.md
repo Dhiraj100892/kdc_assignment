@@ -31,5 +31,5 @@ I used L2 norm from the mean position of joint angle as closesness measure. The 
 
 ----
 #Part 4
-![picture alt](https://drive.google.com/file/d/0B1Jn7RtPbkDRN2FEUVNjTWhOeFE/view?usp=sharing "Title is optional")
+![picture alt](http://www.brightlightpictures.com/assets/images/portfolio/thethaw_header.jpg "Title is optional")
 
