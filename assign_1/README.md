@@ -28,13 +28,14 @@ To run the code for 3 link arm, you can run part_1/que_1.m.
 ----
 
 #Part 2 Analytic Derivatives
-With additional knowledge of derivatives of cost wrt. to joint parameters, optimization took less time, as solver won't spend time on calculating it via finite difference method. To culculate the derivatives I used symbolics.  
+With additional knowledge of derivatives of cost wrt. to joint parameters, optimization took less time, as solver won't spend time on calculating it via finite difference method. To culculate the derivatives I used symbolics to represent the end effactor in terms of joint angle varibles and used Jacobian to calculate the derivatives.  
 
 ### Running the code
 To run the code for 3 link arm, you can run part_2/que_2.m.
 
 ----
 #Part 3
+I comapre the active set, sequential quadratic programming & intrior point algotrithm in terms of computation time and solution quality. For comparison purposes I specify a desired position and orientation. I set maximum number of function evaluation to be 1000 for all algorithms. I found that the time taken and accuracy of solution is inversly proportional for each method. The time requirment increases from active-set to sqp to interior point and accuracy follows the exactly reverse order.
 
 ![picture alt](https://cloud.githubusercontent.com/assets/11137004/22453284/e064ae78-e74b-11e6-8baf-4bcd3acc7fa8.jpg "Title is optional")
 
