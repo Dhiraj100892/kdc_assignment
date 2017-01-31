@@ -1,4 +1,4 @@
-# CMU Robotics Institute 16-745: Dynamic Optimization: Assignment 1 
+# CMU Robotics Institute 16-711: Kinematics, Dynamic Systems, and Control: Assignment 1 
 # Dhiraj Gandhi
 #Part 1
 To convert the IK solving problem into optimization problem, I defined  
