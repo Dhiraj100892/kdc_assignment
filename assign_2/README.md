@@ -1,5 +1,5 @@
 # CMU Robotics Institute 16-711:  Assignment 2 
-# Arpit Agarwal, Adam Harley, Dhiraj Gandhi
+# Arpit Agarwal, Adam Harley, Dhiraj Gandhi, Peiyun Hu
 #Part 1
 ----
 
