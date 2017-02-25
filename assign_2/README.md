@@ -41,9 +41,13 @@ Following graph shows the nominal trajectory obtained by ilqr
 ![picture alt](https://github.com/Dhiraj100892/kdc_assignment/blob/master/assign_2/part_6/ilqr/ilqr.jpg?raw=true "Title is optional") 
 
 ### Animation 
-https://www.youtube.com/watch?v=u7QP_OsIim8&feature=youtu.be
 [![Alt text](https://img.youtube.com/vi/u7QP_OsIim8/0.jpg)](https://www.youtube.com/watch?v=u7QP_OsIim8)
 
-## Sol_2
+## Sol_2 - Direct collocation
+To find the nominal trajectory we used the direct collocation method that helps to solve the differential equation to achive the desired state. We used [OptimTraj](https://github.com/MatthewPeterKelly/OptimTraj) library for matlab.
+
+### Animation
+[![Alt text](https://img.youtube.com/vi/vBi5RrMyUhY/0.jpg)](https://www.youtube.com/watch?v=vBi5RrMyUhY)
+
 
 ----
