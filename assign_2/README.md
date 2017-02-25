@@ -16,7 +16,15 @@ Following graph depicts the perfromace of controller in making the pole upright 
 ![picture alt](https://raw.githubusercontent.com/Dhiraj100892/kdc_assignment/master/assign_2/part_4/ang_comp.jpg "Title is optional") 
 
 We used simscape to visualize the system behaviour under this controller.
+## initial Angle 30 deg
 [![Alt text](https://img.youtube.com/vi/r-_sYmAdkc8/0.jpg)](https://www.youtube.com/watch?v=r-_sYmAdkc8)
+
+## initial Angle 60 deg
+[![Alt text](https://img.youtube.com/vi/2qa0rhQoyfg/0.jpg)](https://www.youtube.com/watch?v=2qa0rhQoyfg)
+
+## initial Angle 90 deg
+[![Alt text](https://img.youtube.com/vi/RoG2T2gHZEw/0.jpg)](https://www.youtube.com/watch?v=RoG2T2gHZEw)
+
 ----
 #Part 5
 
