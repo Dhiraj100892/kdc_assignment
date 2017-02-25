@@ -25,10 +25,17 @@ We used simscape to visualize the system behaviour under this controller.
 ## initial Angle 90 deg
 [![Alt text](https://img.youtube.com/vi/RoG2T2gHZEw/0.jpg)](https://www.youtube.com/watch?v=RoG2T2gHZEw)
 
+In case of intial angle equal to 90 degree, lqr completely failed to m make it upright
 ----
 #Part 5
 
 ----
-#Part 6
+#Part 6 Swing Up problem
+
+## Sol_1 - Iterative lqr
+To find out the nominal trajectory which will swing the pendulum from stable down position to unstable upright position we used the Iterative lqr (ilqr). We started with intial guess (contol action 0 for all the time). We roll out the trajectory for this control action using system dynamics. Ilqr linearized the model along the btained trajectory and provided us the improved control action that will minimize the quadratic cost function. For implementation we refered to .[this paper](https://homes.cs.washington.edu/~todorov/papers/LiICINCO04.pdf) 
+
+ 
+## Sol_2
 
 ----
