@@ -1,7 +1,7 @@
 %% init
 clear
 close all
-clc
+%clc
 
 %% desciption
 
