@@ -4,8 +4,8 @@
 ----
 The Lagrangian method was used to derive the inverse dynamics of the system.
 #Part 2 
-The simulation was performed in ODE and visualization was made in pygame. A short demo video [![youtube link](http://img.youtube.com/vi/xkcGlrkoe14/0.jpg)](http://www.youtube.com/watch?v=xkcGlrkoe14). 
 ----
+The simulation was performed in ODE and visualization was made in pygame. A short demo video [![youtube link](http://img.youtube.com/vi/xkcGlrkoe14/0.jpg)](http://www.youtube.com/watch?v=xkcGlrkoe14). 
 #Part 3
 
 ----
