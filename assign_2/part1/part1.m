@@ -13,7 +13,16 @@ q = [x,theta];
 q_dot = [x_dot, theta_dot];
 q_ddot = [x_ddot, theta_ddot];
 
-% % lagrangian
+%% lagrangian
+% The lagrangian (L) is defined as:
+% 
+%       l = KE - PE
+%
+% where 
+%       KE = system's kinetic energy
+%       PE = system's potential energy
+
+
 l = (1/2)*M*(x_dot^2) + (1/2)*m*((x_dot + L*cos(theta)*theta_dot)^2 + (-L*sin(theta)*theta_dot)^2) - m*g*L*cos(theta);
 
 dl_dq = jacobian(l, q);
