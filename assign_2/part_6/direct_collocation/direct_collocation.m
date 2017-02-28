@@ -59,12 +59,12 @@ problem.guess.control = [0,0];
 %                         Solver options                                  %
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%
 
-problem.options(1).nlpOpt = optimset(...
-    'Display','iter',...
-    'TolFun',1e-3,...
-    'MaxFunEvals',1e5);
-problem.options(1).method = 'trapezoid';
-problem.options(1).trapezoid.nGrid = 10;
+% problem.options(1).nlpOpt = optimset(...
+%     'Display','iter',...
+%     'TolFun',1e-3,...
+%     'MaxFunEvals',1e5);
+% problem.options(1).method = 'trapezoid';
+% problem.options(1).trapezoid.nGrid = 10;
 
 problem.options(2).nlpOpt = optimset(...
     'Display','iter',...
@@ -85,8 +85,10 @@ z = soln(end).interp.state(t);
 u = soln(end).interp.control(t);
 
 % z(1,:) = pos | z(2,:) = theta  
-plot(t,z(2,:),'b')
-plot(t,u,'r')
+
+subplot(1,3,1); plot(t,z(1,:),'g');
+subplot(1,3,2); plot(t,z(2,:),'b'); 
+subplot(1,3,3); plot(t,u,'r'); 
 
 
 

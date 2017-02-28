@@ -30,6 +30,29 @@ In case of intial angle equal to 90 degree, lqr completely failed to m make it u
 ----
 #Part 5
 
+To estimate the size of basin of attraction, we first uniformly sample initial
+conditions from a reasonable range. For each initial condition, we test if it
+leads to upright equilibrium. Then we use the percentage of sampled initial
+conditions that are able to keep the system upright as the size of basin of
+attraction. 
+
+For each possible nonlinear gain (due to limited computational resources, we
+only consider altering R here), we can estimate the size of basin of
+attraction. We visualize a basin of attraction estimated from sampled initial
+conditions
+in
+![this figure](https://raw.githubusercontent.com/Dhiraj100892/kdc_assignment/master/assign_2/part_5/basin_R1.50.png).
+
+We alter R to find one that maximizes the basin size. We show the basin size as
+a function of R
+in
+![this figure](https://raw.githubusercontent.com/Dhiraj100892/kdc_assignment/master/assign_2/part_5/basin_R.png). We
+find that the size of basic of attraction is larger, when R is close to 0. Since
+a smaller R means we use more energy to stabilize the system; while a bigger R
+means we use less energy to do so. This figure shows the more energy we use, the
+more robust the system is (the larger the basin of attraction is).
+
+
 ----
 #Part 6 Swing Up problem
 
