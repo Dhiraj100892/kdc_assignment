@@ -44,8 +44,9 @@ attraction.
 For each possible nonlinear gain (due to limited computational resources, we
 only consider altering R here), we can estimate the size of basin of
 attraction. As examples, we visualize a basin of attraction estimated from
-sampled initial conditions for R = 1.5 and R=3.0 as below (bright color means
-that it ends up keeping upright
+sampled initial conditions (we consider initial angle and position, as x-axis
+and y-axis) for R = 1.5 and R=3.0 as below (bright color means that it ends up
+keeping upright
 equilibrium) :
 ![R=1.5](https://raw.githubusercontent.com/Dhiraj100892/kdc_assignment/master/assign_2/part_5/basin_R1.50.png) ![R=3.0](https://raw.githubusercontent.com/Dhiraj100892/kdc_assignment/master/assign_2/part_5/basin_R3.00.png).
 
