@@ -47,7 +47,7 @@ attraction. As examples, we visualize a basin of attraction estimated from
 sampled initial conditions for R = 1.5 and R=3.0 as below (bright color means
 that it ends up keeping upright
 equilibrium) :
-![R=1.5](https://raw.githubusercontent.com/Dhiraj100892/kdc_assignment/master/assign_2/part_5/basin_R1.50.png) ![R=3.0](https://raw.githubusercontent.com/Dhiraj100892/kdc_assignment/master/assign_2/part_5/basin_R0.50.png).
+![R=1.5](https://raw.githubusercontent.com/Dhiraj100892/kdc_assignment/master/assign_2/part_5/basin_R1.50.png) ![R=3.0](https://raw.githubusercontent.com/Dhiraj100892/kdc_assignment/master/assign_2/part_5/basin_R3.00.png).
 
 We alter R to find one that maximizes the basin size. We show the basin size as
 a function of R
