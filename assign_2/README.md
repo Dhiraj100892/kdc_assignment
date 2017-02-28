@@ -7,6 +7,11 @@ The Lagrangian method was used to derive the inverse dynamics of the system.
 ----
 The simulation was performed in ODE and visualization was made in pygame. A short demo video [![youtube link](http://img.youtube.com/vi/xkcGlrkoe14/0.jpg)](http://www.youtube.com/watch?v=xkcGlrkoe14). 
 #Part 3
+To manually find gains that kept the system upright, we did a grid search over large ranges for the four gain parameters. Gradually, we constrained the search until we were left with smaller parameter ranges, in which all configurations caused convergence.
+
+We arrived at the following approximate parameter ranges, for the four parameters respectively: [-2,0], [-4,-2], [35,65], [15,20]. Any sample of parameters within those bounds produces a model that converges. Many such samples are plotted in the figure below. A sample near the middle of the bounds (-1,-2,50,20) is plotted in a thick red line. 
+
+![picture alt](https://raw.githubusercontent.com/Dhiraj100892/kdc_assignment/master/assign_2/part_3/converging_gains.png "Converging gains") 
 
 ----
 #Part 4 LQR to obtain control gains to keep system upright
