@@ -43,15 +43,16 @@ attraction.
 
 For each possible nonlinear gain (due to limited computational resources, we
 only consider altering R here), we can estimate the size of basin of
-attraction. We visualize a basin of attraction estimated from sampled initial
-conditions
-in
-![this figure](https://raw.githubusercontent.com/Dhiraj100892/kdc_assignment/master/assign_2/part_5/basin_R1.50.png).
+attraction. As examples, we visualize a basin of attraction estimated from
+sampled initial conditions for R = 1.5 and R=3.0 as below (bright color means
+that it ends up keeping upright
+equilibrium) :
+![R=1.5](https://raw.githubusercontent.com/Dhiraj100892/kdc_assignment/master/assign_2/part_5/basin_R1.50.png) ![R=3.0](https://raw.githubusercontent.com/Dhiraj100892/kdc_assignment/master/assign_2/part_5/basin_R0.50.png).
 
 We alter R to find one that maximizes the basin size. We show the basin size as
 a function of R
 in
-![this figure](https://raw.githubusercontent.com/Dhiraj100892/kdc_assignment/master/assign_2/part_5/basin_R.png).
+![BS(R)](https://raw.githubusercontent.com/Dhiraj100892/kdc_assignment/master/assign_2/part_5/basin_R.png).
 
 We find that the size of basic of attraction is larger, when R is close
 to 0. Since a smaller R means we use more energy to stabilize the system; while
