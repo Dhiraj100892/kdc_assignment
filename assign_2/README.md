@@ -51,11 +51,12 @@ in
 We alter R to find one that maximizes the basin size. We show the basin size as
 a function of R
 in
-![this figure](https://raw.githubusercontent.com/Dhiraj100892/kdc_assignment/master/assign_2/part_5/basin_R.png). We
-find that the size of basic of attraction is larger, when R is close to 0. Since
-a smaller R means we use more energy to stabilize the system; while a bigger R
-means we use less energy to do so. This figure shows the more energy we use, the
-more robust the system is (the larger the basin of attraction is).
+![this figure](https://raw.githubusercontent.com/Dhiraj100892/kdc_assignment/master/assign_2/part_5/basin_R.png).
+
+We find that the size of basic of attraction is larger, when R is close
+to 0. Since a smaller R means we use more energy to stabilize the system; while
+a bigger R means we use less energy to do so. This figure shows the more energy
+we use, the more robust the system is (the larger the basin of attraction is).
 
 
 ----
