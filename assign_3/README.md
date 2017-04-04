@@ -1,11 +1,11 @@
 # CMU Robotics Institute 16-711:  Assignment 2 
 # Arpit Agarwal, Adam Harley, Dhiraj Gandhi, Peiyun Hu
-
-#Part 1
+----
+# Part 1
 
 [![youtube link](http://img.youtube.com/vi/5jx8qBW6Ke4/0.jpg)](https://www.youtube.com/watch?v=5jx8qBW6Ke4). 
 ----
-#Part 2 
+# Part 2 
 ----
 ## Part 2A
 ### Center of mass location
