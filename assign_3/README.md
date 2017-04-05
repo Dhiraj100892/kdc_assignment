@@ -31,5 +31,5 @@ We used W_dot(T-1) and W(T-1) to find W(T) using euler integration method
 iii) Predict R(T+1)
 We predicted R_dot(T) = W(T)xR(T) and wusing that R(T+1) by euler forward integration
  
-#Part 3
+# Part 3
 
