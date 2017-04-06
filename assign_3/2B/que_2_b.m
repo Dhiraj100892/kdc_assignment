@@ -33,8 +33,6 @@ for i = 1: size(marker,1)
     temp = zeros(3);
     if i >= 2
         temp = R' * ((R - R_prev) * freq);
-%           temp =  ((R - R_prev) * freq) .* R_prev' ;
-%         temp = R' .* ((R - R_prev) * freq);
     end
     ang_vel(i,1) = temp(3,2);
     ang_vel(i,2) = temp(3,1);
