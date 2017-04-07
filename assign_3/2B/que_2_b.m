@@ -8,8 +8,8 @@ close all;
 % V_centroid = V_CM + W x r_(centroid_from_CM)   [W is angular velocity]
 % 2nd method
 %w = r_(centroid_from_CM) x (V_centroid - V_CM) / |r_(centroid_from_CM)|^2
-[D,names,units,freq] = mrdplot_convert('../../data/d00060');
-marker = D( :, findMRDPLOTindex(names,'m0x'):findMRDPLOTindex(names,'m0x') + 23);
+[D,names,units,freq] = mrdplot_convert('../data/d00060');
+marker = D( :, findMRDPLOTindex(names,'ml0x'):findMRDPLOTindex(names,'ml0x') + 23);
 num_markers = 8;
 
 %% find the rotation matrix
@@ -20,10 +20,20 @@ diff_rotation = zeros(size(marker,1)-1,3,3);
 ang_vel = zeros(size(marker,1)-1,3);
 R = zeros(3);
 R_prev = zeros(3);
-O = 1;           % origin
-X = 5;           % O --> X    x-axis
-Y = 3;           % O --> Y    y-axis
-Z = 2;           % O --> Z    z-axis
+%%% for lander coordinate frame case
+
+O = 5;           % origin
+X = 7;           % O --> X    x-axis
+Y = 1;           % O --> Y    y-axis
+Z = 6;           % O --> Z    z-axis
+
+
+%%% for global coordinate frame case
+
+% O = 1;           % origin
+% X = 5;           % O --> X    x-axis
+% Y = 3;           % O --> Y    y-axis
+% Z = 2;           % O --> Z    z-axis
 for i = 1: size(marker,1)
     % over here I have a diubt .. wheather it should be column or row wise
     R(:,1) = normr( marker(i,3*(X-1)+1:3*X) - marker(i,3*(O-1)+1:3*O))';

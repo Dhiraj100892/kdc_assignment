@@ -8,40 +8,51 @@
 %I further used the shape of artifact into consideration to get the 
 % orthogonal vectors which will be helpful in defining the rotation matrix 
 
-%% init
 clc;
 clear;
 close all;
 
-%% calculate the rotation matrix for all the time step
-M = get_the_markers_trajectory('../../data/d00060');
+%% concept (we r using CM location and its linear velocity from previous que)
+% V_centroid = V_CM + W x r_(centroid_from_CM)   [W is angular velocity]
+% 2nd method
+%w = r_(centroid_from_CM) x (V_centroid - V_CM) / |r_(centroid_from_CM)|^2
+[D,names,units,freq] = mrdplot_convert('../data/d00060');
+marker = D( :, findMRDPLOTindex(names,'ml0x'):findMRDPLOTindex(names,'ml0x') + 23);
+num_markers = 8;
 
-quternion = zeros(size(M,1),4);
+%% find the rotation matrix
+% calculate the rotation matrix for all the time ste
+
+rotation = zeros(size(marker,1),3,3);
+diff_rotation = zeros(size(marker,1)-1,3,3);
+ang_vel = zeros(size(marker,1)-1,3);
 R = zeros(3);
+R_prev = zeros(3);
+%%% for lander coordinate frame case
+
 O = 5;           % origin
 X = 7;           % O --> X    x-axis
 Y = 1;           % O --> Y    y-axis
 Z = 6;           % O --> Z    z-axis
-temp = zeros(size(M,1),3);
-for i = 1: size(M,1)
-    % over here I have a diubt .. wheather it should be column or row wise
-    % R(1,:) = reshape( M(i,X,:) - M(i,O,:), [1,3] ) / norm( reshape( M(i,X,:) - M(i,O,:), [1,3] ) );
-    % R(2,:) = reshape( M(i,Y,:) - M(i,O,:), [1,3] ) / norm( reshape( M(i,X,:) - M(i,O,:), [1,3] ) );
-    % R(3,:) = reshape( M(i,Z,:) - M(i,O,:), [1,3] ) / norm( reshape( M(i,X,:) - M(i,O,:), [1,3] ) );
-    
-    R(1,:) = normr(squeeze(M(i,X,:) - M(i,O,:)));
-    R(2,:) = normr(squeeze(M(i,Y,:) - M(i,O,:)));
-    R(3,:) = normr(squeeze(M(i,Z,:) - M(i,O,:)));
 
-    %% normalize columns
-    R(:,1) = R(:,1)/norm(R(:,1));
-    R(:,2) = R(:,2)/norm(R(:,2));
-    R(:,3) = R(:,3)/norm(R(:,3));
-%     temp(i,:) = R(1,:);
-    %% convert the roation matrix to quaternion
-    quternion(i,:) = rotm2quat(R); 
+
+%%% for global coordinate frame case
+
+% O = 1;           % origin
+% X = 5;           % O --> X    x-axis
+% Y = 3;           % O --> Y    y-axis
+% Z = 2;           % O --> Z    z-axis
+
+quaternion = zeros(size(D,1),4);
+for i = 1: size(marker,1)
+    % over here I have a diubt .. wheather it should be column or row wise
+    R(:,1) = normr( marker(i,3*(X-1)+1:3*X) - marker(i,3*(O-1)+1:3*O))';
+    R(:,2) = normr( marker(i,3*(Y-1)+1:3*Y) - marker(i,3*(O-1)+1:3*O))';
+    R(:,3) = normr( marker(i,3*(Z-1)+1:3*Z) - marker(i,3*(O-1)+1:3*O))';
+    % do differentiation
+    quaternion(i,:) = rotm2quat(R);
 end
 
-% ouput->
-% quternion
-
+plot(quaternion(:,2).*quaternion(:,1));hold on;plot(D_com(:,6).*D_com(:,5));hold off
+plot(quaternion(:,3).*quaternion(:,1));hold on;plot(D_com(:,7).*D_com(:,5));hold off
+plot(quaternion(:,4).*quaternion(:,1));hold on;plot(D_com(:,8).*D_com(:,5));hold off
