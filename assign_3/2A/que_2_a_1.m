@@ -12,7 +12,7 @@ close all;
 %% get the values of markers
 global M
 global NF
-M = get_the_markers_trajectory('../../data/d00060');
+M = get_the_markers_trajectory('../data/d00060');
 NF = 1000;
 %% define the intial guess for location as weel as velocity
 CM = zeros(6,1);
@@ -26,6 +26,7 @@ CM_pos = answer(1:3)
 CM_vel = answer(4:6)
 
 
+%% answers
 % CM_pos =
 % 
 %   -11.0000

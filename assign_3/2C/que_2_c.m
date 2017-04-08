@@ -15,9 +15,9 @@ close all;
 
 
 %% calculate the rotation matrix for all the time step
-[data,names,units,freq] = mrdplot_convert('../../data/d00121');
+[data,names,units,freq] = mrdplot_convert('../data/d00060');
 data = data(1:1000,:);
-D = data(:,findMRDPLOTindex(names,'m0x') :findMRDPLOTindex(names,'m0x') + 23);
+D = data(:,findMRDPLOTindex(names,'m0x') :findMRDPLOTindex(names,'m7z'));
 
 ang_vel_world = zeros(size(D,1)-1,3);
 ang_accel_world = zeros(size(D,1) - 2,3);
