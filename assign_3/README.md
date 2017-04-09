@@ -34,7 +34,7 @@ iii) calculate R(T+1)
 We calculated R_dot(T) = W(T)xR(T) and wusing that R(T+1) by euler forward integration
  
 # Part 3
-For this part, the trajectory of the COM of the alien artifact was calculated by using the forward propagation using the parameters found in 2. A slight offset was added to the answer in part 2e such that the lander doesn't collide with the alien. The offset we used was [0,3,0] in body coordinate frame.
+For this part, the trajectory of the COM of the alien artifact was calculated by using the forward propagation using the parameters found in 2. A slight offset was added to the answer in part 2e such that the lander doesn't collide with the alien. The offset we used was [0,2.2,0] in body coordinate frame.
 This trajectory was read from file named problem_3.dat into the simulate.c file. This trajectory was then provided as the desired trajectory of the lander in sim.lander_x_d and sim.lander_q_d for each simulation time step. 
 For control the given PD control was used with slight change in k_x = 2.0, b_x = 2.5, k_r = 100.0, b_r = 20.0 for better performance.
 
