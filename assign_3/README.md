@@ -32,6 +32,8 @@ ii) calculate W(T)
 We used W_dot(T-1) and W(T-1) to find W(T) using euler integration method 
 iii) calculate R(T+1)
 We calculated R_dot(T) = W(T)xR(T) and wusing that R(T+1) by euler forward integration
+![picture alt](https://raw.githubusercontent.com/Dhiraj100892/kdc_assignment/master/assign_3/2E/cm.jpg "Title is optional") 
+![picture alt](https://raw.githubusercontent.com/Dhiraj100892/kdc_assignment/master/assign_3/2E/quat.jpg "Title is optional") 
  
 # Part 3
 For this part, the trajectory of the COM of the alien artifact was calculated by using the forward propagation using the parameters found in 2. A slight offset was added to the answer in part 2e such that the lander doesn't collide with the alien. The offset we used was [0,2.2,0] in body coordinate frame.
