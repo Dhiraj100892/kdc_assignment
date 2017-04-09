@@ -86,3 +86,4 @@ ang_accel_lander(:,2) = smooth(ang_accel_lander(:,2),10);
 ang_accel_lander(:,3) = smooth(ang_accel_lander(:,3),10);
 %% output 
 % ang_vel_lander
+save('problem_2_2.dat','ang_accel_lander','-ascii');

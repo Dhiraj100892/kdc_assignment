@@ -39,3 +39,10 @@ CM_vel = answer(4:6)
 %     0.0200
 %    -0.0500
 %     0.0100
+
+CM_traj = zeros(NF,3);
+CM_traj(1,:) = CM_pos;
+for i = 2:NF
+    CM_traj(i,:) = CM_traj(i-1,:) + CM_vel' * 0.01; 
+end
+save('CM_traj.dat', 'CM_traj','-ascii') 

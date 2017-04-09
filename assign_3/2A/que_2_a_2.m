@@ -56,3 +56,6 @@ for i = 1: size(D,1)
     end
 end
 
+save('quaternion.dat','quaternion_lander','-ascii')
+save_data = [load('CM_traj.dat') load('quaternion.dat')];
+save('problem_2_0.dat', 'save_data', '-ascii');

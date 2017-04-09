@@ -70,5 +70,4 @@ end
 
 
 %% output 
-ang_vel_lander = [zeros(1,3);ang_vel_lander];
-save -ascii 'problem_2_1.dat' 'ang_vel_lander'
+save('problem_2_1.dat','ang_vel_lander','-ascii')

@@ -15,7 +15,7 @@ close all;
 
 
 %% calculate the rotation matrix for all the time step
-[data,names,units,freq] = mrdplot_convert('../../data/d00121');
+[data,names,units,freq] = mrdplot_convert('../data/d00121');
 data = data(1:1000,:);
 D = data(:,findMRDPLOTindex(names,'m0x') :findMRDPLOTindex(names,'m0x') + 23);
 
@@ -139,7 +139,7 @@ I = [V(1,6) V(2,6) V(3,6);
  fut_ang_accel_world(1,:) = ang_accel_world(end,:);
  
  % iteraret 
- for i = 1: 1000
+ for i = 1: 1005
      
      %% for lander
      % predict r_dot and r(t+1)
@@ -181,3 +181,29 @@ I = [V(1,6) V(2,6) V(3,6);
  
      %
  end
+
+ %% cm trajectory
+ cm_pos_world = [0 0 4.0];
+ cm_vel_world = [0.05 0.02 0.01];
+ cm_traj_world = zeros(2000,3);
+ cm_traj_world(1,:) = cm_pos_world;
+ for i = 2:2000
+     cm_traj_world(i,:) = cm_traj_world(i-1,:) + cm_vel_world * 0.01; 
+ end
+ 
+ %% quaternion
+ full_quaternion_world = [quaternion_world;fut_quaternion_world];
+ full_quaternion_world = full_quaternion_world(1:2000,:);
+ 
+ %% full_ang_vel
+ full_ang_vel_world = [ang_vel_world; fut_ang_vel_world];
+ full_ang_vel_world = full_ang_vel_world(1:2000,:);
+ 
+ %% full_ang_accel
+ full_ang_accel_world = [ang_accel_world; fut_ang_accel_world];
+ full_ang_accel_world = full_ang_accel_world(1:2000,:);
+ 
+ %% saving the data
+ data_save = [cm_traj_world full_quaternion_world];
+ save('problem_2_3.dat','data_save','-ascii');
+ 
