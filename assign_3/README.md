@@ -2,9 +2,9 @@
 # Arpit Agarwal, Adam Harley, Dhiraj Gandhi, Peiyun Hu
 ----
 # Part 1
-According to the tennis racket theorem, to maximally tumble the alien artifact should be given large angular velocity about the axis on which it is intermediate moment of inertia(y-axis) in this case. Therefore the unit vector can be (0.0011,1,0) in alien artifact coordinate system. With this angular velocity if the alien artifact is given a small flick in any other direction namely x or z, it will tumble maximally.
+According to the tennis racket theorem, to maximally tumble the alien artifact should be given large angular velocity about the axis on which it is intermediate moment of inertia(y-axis) in this case. Therefore the unit vector can be (0.0011,1,0) in alien artifact coordinate system. With this angular velocity if the alien artifact is given a small flick in any other direction namely x or z, it will tumble maximally. To make the alien rotate about a fixed axis it should be given angular velocity only along a single axis x,y,z because initially the axis of alien are given to be aligned.
 [![youtube link](http://img.youtube.com/vi/5jx8qBW6Ke4/0.jpg)](https://www.youtube.com/watch?v=5jx8qBW6Ke4). 
-To make the alien rotate about a fixed axis it should be given angular velocity only along a single axis x,y,z because initially the axis of alien are given to be aligned.
+
 ----
 # Part 2 
 ----
