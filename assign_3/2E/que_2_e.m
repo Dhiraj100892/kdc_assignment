@@ -15,7 +15,11 @@ close all;
 
 
 %% calculate the rotation matrix for all the time step
+<<<<<<< HEAD
 [data,names,units,freq] = mrdplot_convert('../data/d00121');
+=======
+[data,names,units,freq] = mrdplot_convert('../../data/d00060');
+>>>>>>> 384527c77a032e4d3f627bb28ccd67f39d8979e9
 data = data(1:1000,:);
 D = data(:,findMRDPLOTindex(names,'m0x') :findMRDPLOTindex(names,'m0x') + 23);
 
