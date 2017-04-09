@@ -23,6 +23,9 @@ we used above calculated angular velocities and finite difference method to calc
 ## Part 2D Inertia Tensor
 We used the Iwdot + w x Iw = torue relation and zero external torque to find out the moment of inertia from the marker position. We tried to simplify the relation in the form A*b = 0, by taking into account that the inertia tensor is symmetric, where A is consist of both angular velocity and acceleration (we used above calculated values at their place) and b contains 6 element to express inertia. As b = 0  is a trivial solution of this problem, we did SVD decomposition of A to search in null space of A. We took the last column value of V matrix as a value of I.
 The value of I =
+    0.5960   -0.0001    0.0001
+   -0.0001    0.1747    0.0010
+    0.0001    0.0010    0.7838
 
 ## Part 2E Future trajectory calculation
 We divided this problem into three sub problems
@@ -32,7 +35,9 @@ ii) calculate W(T)
 We used W_dot(T-1) and W(T-1) to find W(T) using euler integration method 
 iii) calculate R(T+1)
 We calculated R_dot(T) = W(T)xR(T) and wusing that R(T+1) by euler forward integration
+
 ![picture alt](https://raw.githubusercontent.com/Dhiraj100892/kdc_assignment/master/assign_3/2E/cm.jpg "Title is optional") 
+
 ![picture alt](https://raw.githubusercontent.com/Dhiraj100892/kdc_assignment/master/assign_3/2E/quat.jpg "Title is optional") 
  
 # Part 3
