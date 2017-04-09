@@ -33,6 +33,12 @@ The value of I =
 
     0.0001    0.0010    0.7838
 
+Value for principle moment of inertia is :
+
+0.1747    0    	0
+   0    0.5960  0
+   0      0    0.7838
+
 ## Part 2E Future trajectory calculation
 We divided this problem into three sub problems
 i) calculate the W_dot(T-1)
