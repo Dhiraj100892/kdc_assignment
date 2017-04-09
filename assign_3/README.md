@@ -35,13 +35,13 @@ The value of I =
 
 Value for principle moment of inertia is :
 
-0.1747    0    	0
+	0.1747   0   0
 
 
-   0    0.5960  0
+	0   0.5960   0
 
 
-   0      0    0.7838
+   	0   0   0.7838
 
 
 
