@@ -25,13 +25,13 @@ We used the Iwdot + w x Iw = torue relation and zero external torque to find out
 The value of I =
 
 
-    0.5960   -0.0001    0.0001
+	0.5960   -0.0001    0.0001
 
 
-   -0.0001    0.1747    0.0010
+	-0.0001    0.1747    0.0010
 
 
-    0.0001    0.0010    0.7838
+	0.0001    0.0010    0.7838
 
 Value for principle moment of inertia is :
 
